@@ -21,4 +21,10 @@ function stars() {
   }
 }
 
+document.addEventListener("mousemove", function (e) {
+  var rocket = document.querySelector(".rocket");
+  rocket.style.left = e.offsetX + "px";
+  rocket.style.top = e.offsetY + "px";
+});
+
 stars();
